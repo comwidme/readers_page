@@ -1,0 +1,271 @@
+:root {
+  --navy: #003366;
+  --gold: #ffd700;
+  --ink: #1f2a37;
+  --soft: #f6f8fb;
+  --line: #dce3ed;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  color: var(--ink);
+  background: var(--white);
+  line-height: 1.6;
+}
+
+.container {
+  width: min(1080px, calc(100% - 3rem));
+  margin: 0 auto;
+}
+
+.hero {
+  position: relative;
+  min-height: 76vh;
+  color: var(--white);
+  background-image: linear-gradient(rgba(0, 41, 82, 0.74), rgba(0, 27, 55, 0.74)),
+    url("https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=1900&q=80");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 80% 26%, rgba(255, 215, 0, 0.35), transparent 40%);
+}
+
+.top-nav,
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.top-nav {
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.nav-cta {
+  color: var(--white);
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  padding: 0.45rem 0.95rem;
+  border-radius: 999px;
+}
+
+.hero-content {
+  padding: 5.5rem 0 6rem;
+  max-width: 760px;
+}
+
+.eyebrow {
+  color: var(--gold);
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 3.1rem);
+  line-height: 1.2;
+  margin-bottom: 0.85rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  max-width: 56ch;
+  margin-bottom: 1.6rem;
+}
+
+.primary-btn {
+  display: inline-block;
+  background: var(--gold);
+  color: #1b1b1b;
+  text-decoration: none;
+  border: none;
+  border-radius: 12px;
+  padding: 0.85rem 1.35rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, filter 0.22s ease;
+}
+
+.primary-btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+}
+
+.section {
+  padding: 4.5rem 0;
+}
+
+.section h2 {
+  font-size: clamp(1.5rem, 2.3vw, 2rem);
+  margin-bottom: 1.5rem;
+}
+
+.section-muted {
+  background: var(--soft);
+}
+
+.value-grid,
+.info-grid,
+.benefit-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.value-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.value-card,
+.info-card,
+.benefit-item {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1.25rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.value-card:hover,
+.info-card:hover,
+.benefit-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(7, 33, 65, 0.1);
+}
+
+.value-card h3,
+.info-card h3,
+.benefit-item h3 {
+  color: var(--navy);
+  margin-bottom: 0.35rem;
+}
+
+.info-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.book-layout {
+  display: grid;
+  grid-template-columns: minmax(220px, 340px) 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.book-cover-wrap {
+  margin: 0;
+}
+
+.book-cover {
+  width: 100%;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  box-shadow: 0 12px 30px rgba(0, 40, 82, 0.18);
+}
+
+.book-kicker {
+  color: var(--navy);
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.book-detail h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.book-author {
+  color: #48566b;
+  margin-bottom: 1rem;
+}
+
+.benefit-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.apply-form {
+  max-width: 760px;
+  display: grid;
+  gap: 1rem;
+}
+
+.apply-form label {
+  display: grid;
+  gap: 0.45rem;
+  font-weight: 600;
+}
+
+.apply-form input,
+.apply-form select,
+.apply-form textarea {
+  width: 100%;
+  border: 1px solid #c3cfdf;
+  border-radius: 12px;
+  padding: 0.75rem 0.85rem;
+  font: inherit;
+}
+
+.apply-form input:focus,
+.apply-form select:focus,
+.apply-form textarea:focus {
+  outline: 2px solid rgba(0, 51, 102, 0.2);
+  border-color: var(--navy);
+}
+
+@media (max-width: 960px) {
+  .value-grid,
+  .info-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .book-layout,
+  .benefit-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: min(1080px, calc(100% - 2rem));
+  }
+
+  .value-grid,
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content {
+    padding: 4rem 0 4.5rem;
+  }
+
+  .nav-cta {
+    font-size: 0.9rem;
+  }
+}
