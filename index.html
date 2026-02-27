@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>등대독서회 | (주)제주비</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="top">
+      <div class="hero-overlay"></div>
+      <nav class="top-nav container">
+        <div class="brand">등대독서회</div>
+        <a class="nav-cta" href="#apply">입회 신청</a>
+      </nav>
+      <div class="hero-content container">
+        <p class="eyebrow">(주)제주비 임직원 전용 북클럽</p>
+        <h1>금요일 오전 11시, 당신의 성장을 밝히는 등대를 만나보세요.</h1>
+        <p class="subtitle">
+          (주)제주비 임직원을 위한 프리미엄 독서 커뮤니티, 등대독서회
+        </p>
+        <a class="primary-btn" href="#apply">지금 바로 입회하기</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section container" aria-labelledby="core-values-title">
+        <h2 id="core-values-title">등대독서회의 핵심 가치</h2>
+        <div class="value-grid">
+          <article class="value-card">
+            <h3>Insight</h3>
+            <p>업무의 시야를 넓히는 비즈니스 인사이트</p>
+          </article>
+          <article class="value-card">
+            <h3>Network</h3>
+            <p>부서 간 장벽을 허무는 수평적 소통</p>
+          </article>
+          <article class="value-card">
+            <h3>Rest</h3>
+            <p>금요일 점심, 책과 함께하는 밀도 있는 휴식</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-muted" aria-labelledby="info-grid-title">
+        <div class="container">
+          <h2 id="info-grid-title">모임 정보 한눈에 보기</h2>
+          <div class="info-grid">
+            <article class="info-card">
+              <h3>일시</h3>
+              <p>매주 금요일 11:00 ~ 13:00</p>
+            </article>
+            <article class="info-card">
+              <h3>대상</h3>
+              <p>(주)제주비 임직원 누구나 (선착순 20명)</p>
+            </article>
+            <article class="info-card">
+              <h3>장소</h3>
+              <p>4층 크리에이티브 라운지</p>
+            </article>
+            <article class="info-card">
+              <h3>준비물</h3>
+              <p>열린 마음과 나누고 싶은 생각</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" aria-labelledby="book-title">
+        <h2 id="book-title">이달의 도서</h2>
+        <div class="book-layout">
+          <figure class="book-cover-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=900&q=80"
+              alt="이달의 도서 표지"
+              class="book-cover"
+            />
+          </figure>
+          <article class="book-detail">
+            <p class="book-kicker">Book of the Month</p>
+            <h3>불확실성의 시대, 전략적 사고</h3>
+            <p class="book-author">저자: 미야모토 켄</p>
+            <p>
+              급변하는 시장에서 우리가 가져야 할 태도를 함께 고민해보기 위해 선정했습니다.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-muted" aria-labelledby="benefits-title">
+        <div class="container">
+          <h2 id="benefits-title">멤버 혜택</h2>
+          <div class="benefit-list">
+            <article class="benefit-item">
+              <h3>📚 도서 지원</h3>
+              <p>매월 읽고 싶은 책 전액 지원</p>
+            </article>
+            <article class="benefit-item">
+              <h3>🥪 런치 박스</h3>
+              <p>최고급 샌드위치와 커피 제공</p>
+            </article>
+            <article class="benefit-item">
+              <h3>🎓 교육 학점</h3>
+              <p>사내 자기계발 학점 인정 (시간당 1점)</p>
+            </article>
+            <article class="benefit-item">
+              <h3>🎁 굿즈 제공</h3>
+              <p>등대독서회 한정판 독서 노트 및 펜 세트</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="apply" aria-labelledby="apply-title">
+        <h2 id="apply-title">가입 신청</h2>
+        <form class="apply-form">
+          <label>
+            이름 / 사번
+            <input type="text" name="identity" placeholder="예: 홍길동 / 2407" required />
+          </label>
+
+          <label>
+            소속 부서
+            <select name="department" required>
+              <option value="" disabled selected>부서를 선택하세요</option>
+              <option>경영지원팀</option>
+              <option>개발팀</option>
+              <option>디자인팀</option>
+              <option>영업마케팅팀</option>
+              <option>운영팀</option>
+            </select>
+          </label>
+
+          <label>
+            참여하고 싶은 이유
+            <textarea
+              name="reason"
+              rows="4"
+              placeholder="간단한 참여 동기를 작성해주세요"
+              required
+            ></textarea>
+          </label>
+
+          <button type="submit" class="primary-btn">제출하기</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
